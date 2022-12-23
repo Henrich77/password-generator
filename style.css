@@ -10,6 +10,8 @@ body,
   height: 100%;
   margin: 0;
   padding: 0;
+  /* background-color: green; */
+
 }
 
 body {
@@ -27,7 +29,7 @@ header {
   text-align: center;
   padding: 20px;
   padding-top: 0px;
-  color: hsl(206, 17%, 28%);
+  color: hsl(206, 88%, 65%);
 }
 
 .card {
@@ -62,7 +64,7 @@ header {
   content: " ";
   display: block;
   width: 100%;
-  background: #e7e9eb;
+  background: #59a4f0;
   height: 2px;
 }
 
