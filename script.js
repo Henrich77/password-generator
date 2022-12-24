@@ -15,19 +15,16 @@ function number() {
 
 var chooseNumber = number();
 
-// console.log(chooseNumber[5]);
 
 function generatePassword() {
 
   var userPass = prompt("How many characters do you want your password to be? ");
 
-  userPass = parseInt(userPass);
-
-  if (userPass == chooseNumber[i]){
+  if (userPass.includes(chooseNumber)) {
     prompt(" do you want any special characters in your password");
   }
   else { 
-    alert(" your password needs to be between 7-129!");
+    alert(" your password needs to be between 7-129 ");
   }
 
 
