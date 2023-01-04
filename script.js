@@ -2,37 +2,42 @@
 var generateBtn = document.querySelector("#generate");
 
 // the generate password function is not defined so I must define it below
+// the amount of characters user can choose to be in password
+// this seems to not work
 
 function number() {
-
-  var allNums = []; 
-
-  for( i = 8; i <= 129; i++){
+  var allNums = [];
+for( i = 8; i <= 128; i++){
     allNums.push(i);
   }
   return allNums
 }
 
 var chooseNumber = number();
+console.log(chooseNumber);
 
 
 function generatePassword() {
-
-  var userPass = prompt("How many characters do you want your password to be? ");
-
-  if (userPass.includes(chooseNumber)) {
-    prompt(" do you want any special characters in your password");
-  }
-  else { 
-    alert(" your password needs to be between 7-129 ");
-  }
-
-
-
- 
+  var chooseNumber;
+  var char= "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+  var sChar = "!@#$%^&*()_+~`|}{[]\:;?><,./-=";
+  var password = " ";
   
-  
+
+  for (var i = 8; i <= 128; i++) {
+    
+    var userChar = prompt(" How many characters do you want in your password? ")
+    
+    if (userChar == i){
+      prompt(" Do you want any special characters in your password?");
+    } else{
+      alert(" Your password needs to be between 8 - 128 characters")
+    }
+    
+  }
 }
+
+
 
 
 
